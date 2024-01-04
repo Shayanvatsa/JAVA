@@ -1,0 +1,18 @@
+import java.util.*;
+class Test{
+    public static void main(String[]args){
+        try{
+            int a=20,b=0,c;
+            c=a/b;
+            System.out.println(c+"\nHello");
+        }
+        catch(ArithmeticException e){
+            System.out.println(e+"\nworld");
+            //e.printStackTrace();
+            //System.out.println(e.getMessage());
+        }
+        finally{
+            System.out.println("Hey there!");
+        }
+    }
+}
